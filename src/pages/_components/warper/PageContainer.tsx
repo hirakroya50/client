@@ -12,7 +12,7 @@ const PageContainer: React.FC<PageContainerProps> = ({
 }) => {
   return (
     <div className={cn("", className)}>
-      <div className="p-4 max-w-4xl  mx-auto">{children}</div>
+      <div className="p-4 max-w-7xl  mx-auto">{children}</div>
     </div>
   );
 };

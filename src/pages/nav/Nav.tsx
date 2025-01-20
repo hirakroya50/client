@@ -4,7 +4,7 @@ import { SignupDropDown } from "./_sub_components/SignupDropDown";
 
 const NavBar = () => {
   return (
-    <PageContainer className="border border-[#e5e7eb]">
+    <PageContainer className="border-b border-[#e5e7eb]">
       <nav className="flex justify-between">
         <a href="#" className="flex  items-center">
           <span className="block h-10 w-12">

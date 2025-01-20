@@ -1,28 +1,18 @@
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import { useAtom } from "jotai";
-import { countAtom } from "./jotai/store";
-import { Button } from "./components/ui/button";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import FirstPage from "./pages/FirstPage/Index";
+import NavBar from "./pages/nav/Nav";
+// import { useAtom } from "jotai";
+// import { countAtom } from "./jotai/store";
 
 const About = () => <h1>About Page</h1>;
 const App: React.FC = () => {
-  const [count, setCount] = useAtom(countAtom);
+  // const [count, setCount] = useAtom(countAtom);
   return (
     <BrowserRouter>
       <div>
-        <div>
-          <h1 className="text-red-900 border border-red-600">
-            Count: {count} kiii
-          </h1>
-          <button onClick={() => setCount(count + 1)}>Increment</button>
-          <button onClick={() => setCount(count - 1)}>Decrement</button>
-          <Button>Click me</Button>
-        </div>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-        </nav>
+        <NavBar />
         <Routes>
-          <Route path="/" element={<>homee</>} />
+          <Route path="/" element={<FirstPage />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>

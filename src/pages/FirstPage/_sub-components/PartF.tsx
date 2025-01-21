@@ -1,5 +1,3 @@
-import React from "react";
-
 const PartF = () => {
   return (
     <div className="border flex">

@@ -4,7 +4,6 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "lucide-react";
-import React from "react";
 
 const FooterPart = () => {
   const data = [

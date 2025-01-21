@@ -1,5 +1,4 @@
 import CustomButton from "@/pages/_components/buttons/CustomButton";
-import React from "react";
 
 const PartG = () => {
   return (

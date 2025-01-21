@@ -1,19 +1,26 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import FirstPage from "./pages/FirstPage/Index";
-import NavBar from "./pages/nav/Nav";
+import SecondPage from "./pages/SecondPage/Index";
 // import { useAtom } from "jotai";
 // import { countAtom } from "./jotai/store";
 
-const About = () => <h1>About Page</h1>;
 const App: React.FC = () => {
   // const [count, setCount] = useAtom(countAtom);
   return (
     <BrowserRouter>
       <div>
-        <NavBar />
         <Routes>
-          <Route path="/" element={<FirstPage />} />
-          <Route path="/about" element={<About />} />
+          <Route
+            path="/"
+            element={
+              <div>
+                <a href="/firstPage">firstPage</a>
+                <a href="secondPage">secondPage</a>
+              </div>
+            }
+          />
+          <Route path="/firstPage" element={<FirstPage />} />
+          <Route path="/secondPage" element={<SecondPage />} />
         </Routes>
       </div>
     </BrowserRouter>

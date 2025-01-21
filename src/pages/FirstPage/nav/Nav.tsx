@@ -1,5 +1,5 @@
-import CustomButton from "../_components/buttons/CustomButton";
-import PageContainer from "../_components/warper/PageContainer";
+import CustomButton from "../../_components/buttons/CustomButton";
+import PageContainer from "../../_components/warper/PageContainer";
 import { DropDownMenu } from "./_sub_components/DropDownMenu";
 import { SignupDropDown } from "./_sub_components/SignupDropDown";
 

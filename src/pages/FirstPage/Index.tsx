@@ -9,41 +9,45 @@ import PartE from "./_sub-components/PartE";
 import PartF from "./_sub-components/PartF";
 import PartG from "./_sub-components/PartG";
 import PartH from "./_sub-components/PartH";
+import NavBar from "./nav/Nav";
 
 const FirstPage = () => {
   return (
-    <div>
-      <PageContainer className="">
-        <PartA />
-      </PageContainer>
-      <PageContainer className=" bg-[#001246]">
-        <PartB />
-      </PageContainer>
-      <div className="customBackground">
-        <PartC />
+    <>
+      <NavBar />
+      <div>
+        <PageContainer className="">
+          <PartA />
+        </PageContainer>
+        <PageContainer className=" bg-[#001246]">
+          <PartB />
+        </PageContainer>
+        <div className="customBackground">
+          <PartC />
+        </div>
+        <PageContainer>
+          <PartD />
+        </PageContainer>
+        <PageContainer>
+          <PartE />
+        </PageContainer>
+        <PageContainer>
+          <PartF />
+        </PageContainer>
+        <PageContainer className=" bg-[#001246]">
+          <PartG />
+        </PageContainer>
+        <PageContainer>
+          <PartH />
+        </PageContainer>
+        <PageContainer>
+          <ContactUs />
+        </PageContainer>
+        <PageContainer>
+          <FooterPart />
+        </PageContainer>
       </div>
-      <PageContainer>
-        <PartD />
-      </PageContainer>
-      <PageContainer>
-        <PartE />
-      </PageContainer>
-      <PageContainer>
-        <PartF />
-      </PageContainer>
-      <PageContainer className=" bg-[#001246]">
-        <PartG />
-      </PageContainer>
-      <PageContainer>
-        <PartH />
-      </PageContainer>
-      <PageContainer>
-        <ContactUs />
-      </PageContainer>
-      <PageContainer>
-        <FooterPart />
-      </PageContainer>
-    </div>
+    </>
   );
 };
 

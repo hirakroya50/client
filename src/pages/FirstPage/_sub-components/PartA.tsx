@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import CustomButton from "@/pages/_components/buttons/CustomButton";
 
 export const PartA = () => {
   return (
@@ -18,16 +18,9 @@ export const PartA = () => {
           marketing campaigns
         </p>
         <div className="flex">
-          <Button className="bg-[#f26627] text-sm hover:bg-[#f26627] w-[5.75rem] h-[3.1875rem]">
-            Login
-          </Button>
+          <CustomButton variant={"VarA"}>Login</CustomButton>
 
-          <Button
-            variant="outline"
-            className="border-[#f26627] hover:bg-[#f26627] h-[3.1875rem] text-[#f26627] hover:text-white focus-visible:ring-0 " //focus-visible:outline-none
-          >
-            Sign Up
-          </Button>
+          <CustomButton variant={"VarB"}>Sign Up</CustomButton>
         </div>
         <div className="flex">
           <img src="/capterra.5c9bd067.svg" alt="" />

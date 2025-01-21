@@ -1,3 +1,4 @@
+import CustomButton from "../_components/buttons/CustomButton";
 import PageContainer from "../_components/warper/PageContainer";
 import { DropDownMenu } from "./_sub_components/DropDownMenu";
 import { SignupDropDown } from "./_sub_components/SignupDropDown";
@@ -22,10 +23,7 @@ const NavBar = () => {
 
         <DropDownMenu />
         <div className="relative">
-          <Button className="bg-[#f26627] text-sm hover:bg-[#f26627] w-[5.75rem] h-[3.1875rem]">
-            Login
-          </Button>
-
+          <CustomButton variant={"VarA"}>Login</CustomButton>
           <SignupDropDown />
         </div>
       </nav>
@@ -34,5 +32,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-import { Button } from "@/components/ui/button";

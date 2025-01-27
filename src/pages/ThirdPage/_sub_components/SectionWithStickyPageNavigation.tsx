@@ -69,10 +69,10 @@ const SectionWithStickyPageNavigation = () => {
   }, []);
 
   return (
-    <section className=" flex  my-3 ">
+    <section className=" flex gap-10  my-3 ">
       {/* Sticky navigation */}
       <div className="">
-        <div className="  w-96 sticky top-0 p-3">
+        <div className="  w-64 sticky top-0 p-3">
           <h4 className="text-2xl pb-8 font-medium mt-20">Table of Contents</h4>
           <ul className="flex flex-col pl-2">
             {navigationItems.map((item) => (

@@ -1,7 +1,7 @@
 const LastArticle = () => {
   return (
-    <section className=" my-8 ">
-      <h2 className="text-4xl text-center font-semibold my-[50px]">
+    <section className=" my-36 ">
+      <h2 className="text-4xl text-center font-semibold mb-[70px]">
         Latest Articles
       </h2>
 
@@ -24,7 +24,7 @@ const LastArticle = () => {
               "Convert Powerpoint to Google Slides with These Easy Steps",
             // text: "Step-by-step instructions on how you can easily convert your PowerPoint presentation into a google slides format.",
             text: "Learn everything about line graphs in our comprehensive guide! Understand their importance, applications, and how to create impactful line graphs with Decktopus.",
-            img: "6281fdd3c63bf83bfec0fd28_Convert Powerpoint to Google Slides with These Easy Steps.avif",
+            img: "6503005b3e9f984c699f0274_The 12 Most Interesting and Fun 5- Minute Ice Breaker Games (1).avif",
           },
         ].map((item, i) => {
           return (

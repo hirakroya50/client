@@ -13,7 +13,7 @@ const ThirdPage = () => {
         <HeaderC />
       </PageContainer>
 
-      <PageContainer className="bg-[url('baground.png')] bg-cover bg-center">
+      <PageContainer className="bg-[url('baground.png')] bg-cover bg-center py-28">
         <HeroComponent />
       </PageContainer>
       <PageContainer>

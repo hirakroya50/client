@@ -44,18 +44,18 @@ const footerData = [
 const FooterComponent = () => {
   return (
     <footer className=" px-60   border-blue-500 my-5 ">
-      <div>
+      <div className="mb-10">
         <img src="/65d3d4e5d4e26e0063259c20_Group (7).svg" alt="" />
       </div>
-      <div className="flex justify-between border-b mt-10">
+      <div className="flex justify-between border-b my-10 pb-10">
         {footerData.map((section, index) => (
           <div key={index} className={`w-fit`}>
-            <h3 className="font-bold text-lg mb-4">{section.title}</h3>
+            <h3 className="font-bold text-lg mb-7">{section.title}</h3>
             <ul>
               {section.links.map((link, linkIndex) => (
                 <li
                   key={linkIndex}
-                  className="text-gray-600 hover:underline mb-2 cursor-pointer"
+                  className="text-gray-600 hover:underline mb-4 cursor-pointer"
                 >
                   {link}
                 </li>

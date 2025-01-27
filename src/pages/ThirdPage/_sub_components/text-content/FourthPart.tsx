@@ -5,7 +5,7 @@ const FourthPart = () => {
     <div>
       <div className="rounded-[15px] overflow-clip">
         <img
-          src="/672e2e3593539f2f79c0d889_654e14bf3d4621fbc2bc2852_w1.webp"
+          src="/674d5ea65de328cddeb90553_654e146a4026bbced820c98c_w4.webp"
           alt=""
           loading="lazy"
         />

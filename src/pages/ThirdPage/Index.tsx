@@ -1,6 +1,8 @@
 import PageContainer from "../_components/warper/PageContainer";
+import FooterComponent from "./_sub_components/FooterComponent";
 import HeaderC from "./_sub_components/HeaderC";
 import { HeroComponent } from "./_sub_components/HeroCompoent";
+import LastArticle from "./_sub_components/LastArtical";
 import SectionWithStickyPageNavigation from "./_sub_components/SectionWithStickyPageNavigation";
 import { StickyFrom } from "./_sub_components/StickyFrom";
 
@@ -11,24 +13,22 @@ const ThirdPage = () => {
         <HeaderC />
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer className="bg-[url('baground.png')] bg-cover bg-center">
         <HeroComponent />
       </PageContainer>
       <PageContainer>
         <SectionWithStickyPageNavigation />
       </PageContainer>
+      <PageContainer>
+        <LastArticle />
+      </PageContainer>
 
-      <section className="h-[50rem] border border-blue-500 my-3 bg-yellow-200">
-        partd
-      </section>
-
-      <div className="bg-red-400 sticky bottom-10">
+      <div className=" sticky bottom-10">
         <StickyFrom />
       </div>
-
-      <section className="h-[150rem] border border-blue-500 my-3 bg-yellow-200">
-        partd
-      </section>
+      <PageContainer>
+        <FooterComponent />
+      </PageContainer>
     </div>
   );
 };

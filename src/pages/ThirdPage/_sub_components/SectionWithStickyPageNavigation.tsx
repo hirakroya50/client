@@ -69,11 +69,11 @@ const SectionWithStickyPageNavigation = () => {
   }, []);
 
   return (
-    <section className=" flex border border-blue-500 my-3 ">
+    <section className=" flex  my-3 ">
       {/* Sticky navigation */}
       <div className="">
-        <div className=" border w-96 sticky top-0 p-3">
-          <h4 className="text-2xl pb-8 font-medium">Table of Contents</h4>
+        <div className="  w-96 sticky top-0 p-3">
+          <h4 className="text-2xl pb-8 font-medium mt-20">Table of Contents</h4>
           <ul className="flex flex-col pl-2">
             {navigationItems.map((item) => (
               <li key={item.id}>
@@ -99,7 +99,7 @@ const SectionWithStickyPageNavigation = () => {
           <div
             key={item.id}
             id={item.id}
-            className={` border  flex items-center justify-center mb-10 p-4`}
+            className={`   flex items-center justify-center mb-10 p-4`}
           >
             {item.id === "first" && <FirstPart />}
             {item.id === "2nd" && <SecPart />}

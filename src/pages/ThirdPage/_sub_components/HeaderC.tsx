@@ -15,9 +15,9 @@ const HeaderC = () => {
         <NavigationMenuForThirdPage />
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-8">
         <a href="#" className="">
-          login
+          Login
         </a>
 
         <a

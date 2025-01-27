@@ -13,7 +13,7 @@ export const HeroComponent = () => {
         </p>
       </div>
 
-      <div className="border rounded-[27px] shadow-lg overflow-clip max-w-[40rem]">
+      <div className=" rounded-[27px] shadow-lg overflow-clip max-w-[40rem]">
         <img
           src="/654e14015a507bad6c8c07c8_How_to_Develop.avif"
           className=" w-fit"

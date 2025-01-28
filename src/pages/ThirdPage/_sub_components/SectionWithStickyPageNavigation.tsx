@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import FirstPart from "./text-content/FirstPart";
 import FourthPart from "./text-content/FourthPart";

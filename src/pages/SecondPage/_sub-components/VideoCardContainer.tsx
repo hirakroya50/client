@@ -4,6 +4,7 @@ const VideoCardContainer = () => {
   return (
     <div className="grid gap-1 md:gap-2 w-full justify-center grid-cols-2 lg:grid-cols-3">
       {[{}, {}, {}].map((item, i) => {
+        console.log(item);
         return <VideoCard key={i} />;
       })}
     </div>

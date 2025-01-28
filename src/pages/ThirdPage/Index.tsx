@@ -7,6 +7,7 @@ import SectionWithStickyPageNavigation from "./_sub_components/SectionWithSticky
 import { StickyFrom } from "./_sub_components/StickyFrom";
 
 const ThirdPage = () => {
+  console.log("test");
   return (
     <div>
       <PageContainer>

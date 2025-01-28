@@ -19,7 +19,7 @@ export function SignupDropDown() {
           variant="outline"
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={() => setOpen(false)}
-          className="border-[#f26627] hover:bg-[#f26627] rounded-[0.625rem] h-[3.1875rem] text-[#f26627] hover:text-white focus-visible:ring-0 " //focus-visible:outline-none
+          className="border-[#f26627] hover:bg-[#f26627] rounded-[0.625rem] px-4 py-[1.3rem] text-[#f26627] hover:text-white focus-visible:ring-0 " //focus-visible:outline-none
         >
           Sign Up
         </Button>

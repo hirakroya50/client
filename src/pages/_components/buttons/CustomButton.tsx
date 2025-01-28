@@ -18,9 +18,9 @@ const CustomButton: React.FC<CustomButtonProps> = ({
     <Button
       className={clsx(
         variant === "VarA"
-          ? "bg-[#f26627] border-[#f26627] border  text-sm hover:bg-[#f26627] rounded-[0.625rem] px-6 py-[1.6rem]"
+          ? "bg-[#f26627] border-[#f26627] border  text-sm font-bold hover:bg-[#f26627] rounded-[0.625rem] px-4 py-[1.3rem]"
           : variant === "VarB"
-          ? "border-[#f26627] border hover:bg-[#f26627] rounded-[0.625rem] px-6 py-[1.6rem] box-border bg-white text-[#f26627] hover:text-white focus-visible:ring-0 "
+          ? "border-[#f26627] border hover:bg-[#f26627] rounded-[0.625rem] px-4 py-[1.3rem] box-border bg-white text-[#f26627] hover:text-white focus-visible:ring-0 "
           : "",
         className
       )}

@@ -23,7 +23,9 @@ const NavBar = () => {
 
         <DropDownMenu />
         <div className="relative">
-          <CustomButton variant={"VarA"}>Login</CustomButton>
+          <CustomButton variant={"VarA"} className="mr-5">
+            Login
+          </CustomButton>
           <SignupDropDown />
         </div>
       </nav>

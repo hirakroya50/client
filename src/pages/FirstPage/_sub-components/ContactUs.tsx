@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <div className="flex flex-col gap-8 items-center">
+    <div className="flex flex-col gap-8 items-center my-10">
       <h2 className="text-3xl font-semibold">Contact Us</h2>
       <p className="text-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,

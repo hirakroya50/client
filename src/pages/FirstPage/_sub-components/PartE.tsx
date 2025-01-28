@@ -33,14 +33,17 @@ const data = [
 ];
 const PartE = () => {
   return (
-    <div>
-      <h1>All-in-One Referral & Affiliate Marketing Software</h1>
-      <p>
-        Launch powerful referral & affiliate programs based on your industry
-        type in minutes - track conversions, automate commissions, process
-        payouts, and scale your campaigns effortlessly.
-      </p>
-
+    <div className="">
+      <div className="text-center my-12">
+        <h1 className="text-4xl font-bold mb-6">
+          All-in-One Referral & Affiliate Marketing Software
+        </h1>
+        <p>
+          Launch powerful referral & affiliate programs based on your industry
+          type in minutes - track conversions, automate commissions, process
+          payouts, and scale your campaigns effortlessly.
+        </p>
+      </div>
       <div
         className="flex flex-wrap justify-center  gap-y-10 gap-x-14
   "

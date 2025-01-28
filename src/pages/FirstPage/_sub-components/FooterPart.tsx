@@ -49,15 +49,15 @@ const FooterPart = () => {
   return (
     <footer className="border-[#f0f1f2] border-t flex pt-10">
       <div className="w-96">
-        <div className="flex">
+        <div className="flex items-center">
           <div className="h-20 ">
             <img src="/clientapplogo.png" alt="" className="h-full w-full" />
           </div>
           <h4 className="text-2xl font-bold">Referral Roctet</h4>
         </div>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, fugit.
+        <p className="mb-10">
+          Referral & Affiliate Software for SaaS, Ecommerce & other businesses.
         </p>
 
         <div className="flex gap-5">

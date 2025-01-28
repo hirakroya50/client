@@ -25,8 +25,8 @@ export const ProductCard = ({
       <p className="text-[##252b42] text-[1.3rem] font-bold py-3 ">
         {item.title}
       </p>
-      <p>{item.text}</p>
-      <Button className="border mt-6 text-[#f26627] border-[#f26627] bg-white rounded-[0.625rem]">
+      <p className="text-[#404040]">{item.text}</p>
+      <Button className="border mt-6 text-[#f26627] border-[#f26627] bg-white rounded-[0.625rem] hover:bg-white">
         View Example
       </Button>
     </div>

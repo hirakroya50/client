@@ -1,8 +1,10 @@
 export const PartC = () => {
   return (
-    <div className="h-96 flex flex-col items-center">
-      <h3>Benefits of Referral and Affiliate Programs</h3>
-      <div className="flex">
+    <div className="  flex flex-col items-center">
+      <h3 className="text-4xl font-bold relative bottom-20">
+        Benefits of Referral and Affiliate Programs
+      </h3>
+      <div className="flex gap-5 ">
         {[
           { percentage: "2-3x", text: "Return on Investments (ROI)" },
 
@@ -14,14 +16,32 @@ export const PartC = () => {
           { percentage: "25%", text: "Increased Customer Spend" },
         ].map((item, i) => {
           return (
-            <div key={i} className="border-r flex flex-col">
-              <p>{item.percentage}</p>
+            <div
+              key={i}
+              className={` border-[#f26627] flex flex-col p-4 text-center max-w-[14rem] ${
+                i === 3 ? "" : "border-r"
+              }`}
+            >
+              <p className="text-[#f26627] text-3xl font-medium">
+                {item.percentage}
+              </p>
               <p>{item.text}</p>
             </div>
           );
         })}
       </div>
-      <div className="h-20 w-40 border">yoputube video</div>
+      <div className="w-[1100px] relative top-20 h-[600px]">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="rounded-[30px] w-full h-full"
+        ></iframe>
+      </div>
     </div>
   );
 };

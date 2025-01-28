@@ -19,12 +19,13 @@ const FirstPage = () => {
         <PageContainer className="">
           <PartA />
         </PageContainer>
-        <PageContainer className=" bg-[#001246]">
-          <PartB />
-        </PageContainer>
         <div className="customBackground">
           <PartC />
         </div>
+        <PageContainer className=" bg-[#001246] py-10">
+          <PartB />
+        </PageContainer>
+
         <PageContainer>
           <PartD />
         </PageContainer>

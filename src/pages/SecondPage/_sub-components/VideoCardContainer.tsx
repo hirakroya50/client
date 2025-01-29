@@ -1,12 +1,17 @@
+import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
 const VideoCardContainer = () => {
   return (
-    <div className="grid gap-1 md:gap-2 w-full justify-center grid-cols-2 lg:grid-cols-3">
-      {[{}, {}, {}].map((item, i) => {
-        console.log(item);
-        return <VideoCard key={i} />;
-      })}
+    <div className="bg-black">
+      <h3 className="text-white text-center font-bold text-3xl">Tools</h3>
+      <ToggleMenu />
+      <div className="grid gap-1 md:gap-2 w-full justify-center grid-cols-2 lg:grid-cols-3">
+        {[{}, {}, {}].map((item, i) => {
+          console.log(item);
+          return <VideoCard key={i} />;
+        })}
+      </div>
     </div>
   );
 };
@@ -84,5 +89,38 @@ const VideoCard = () => {
         </p>
       </div>
     </a>
+  );
+};
+
+const ToggleMenu = () => {
+  const options = [
+    "Highlight",
+    "New",
+    "Image edition",
+    "Generative tools",
+    "Real-estate",
+    "Portrait edition",
+    "All",
+  ];
+  const [selected, setSelected] = useState("Highlight");
+
+  return (
+    <div className="flex gap-2 bg-black p-4 rounded-lg">
+      {options.map((option) => (
+        <Button
+          key={option}
+          className={`px-4 py-2 rounded-full border ${
+            selected === option
+              ? "bg-white text-black"
+              : option === "New"
+              ? "border-blue-500 text-blue-500"
+              : "border-white text-white"
+          }`}
+          onClick={() => setSelected(option)}
+        >
+          {option}
+        </Button>
+      ))}
+    </div>
   );
 };

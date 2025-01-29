@@ -120,6 +120,28 @@ html {
   z-index: 100px;
 }
 
+/* Style the slider thumb */
+.image-comparison-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px; /* Adjust the thumb size */
+  height: 40px;
+  background-color: transparent; /* Make background transparent */
+  border: none;
+  border-radius: 20%; /* Optional: Round the thumb */
+  background-color: #141312; /* Color of the thumb */
+  border: 2px solid #fff; /* White border around the thumb */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow for the thumb */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change the thumb's appearance when hovered */
+.image-comparison-slider::-webkit-slider-thumb:hover {
+  background-color: #383838; /* Darker color when hovered */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
 .second-page-dot-background::before {
   background-size: 15px 15px;
   background-position: 0 -6.5px;

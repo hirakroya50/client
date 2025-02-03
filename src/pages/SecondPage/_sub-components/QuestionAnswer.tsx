@@ -71,7 +71,7 @@ const QuestionAnswer = () => {
   };
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative bg-[#171717] text-white">
       <Accordion type="single" collapsible className="w-full">
         {data.slice(0, visibleCount).map((item, index) => {
           const isFaded =

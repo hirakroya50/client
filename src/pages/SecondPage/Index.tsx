@@ -5,13 +5,13 @@ import VideoCardContainer from "./_sub-components/VideoCardContainer";
 
 const SecondPage = () => {
   return (
-    <div className="">
+    <PageContainer className="bg-[#171717]">
       <HeaderCompponent />
       <ImageSlider />
       <VideoCardContainer />
 
       <QuestionAnswer />
-    </div>
+    </PageContainer>
   );
 };
 
@@ -20,11 +20,11 @@ export default SecondPage;
 const HeaderCompponent = () => {
   return (
     <div className=" sticky top-0 z-20 flex items-center justify-between w-full  text-white bg-[#171717] py-4 border-b border-[#424242]">
-      <p className="font-bold flex gap-2">
+      <p className="font-bold flex gap-2 items-center">
         <span>
-          <Square />
+          <SquareMIcon className="h-10 w-10" />
         </span>
-        <span> CopyBoard By Jser</span>
+        <span> MopyBoard By Jser</span>
       </p>
       <div className="flex gap-3">
         <SelectDemo />
@@ -57,7 +57,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Square } from "lucide-react";
+import { SquareMIcon } from "lucide-react";
+import PageContainer from "../_components/warper/PageContainer";
 
 export function SelectDemo() {
   return (

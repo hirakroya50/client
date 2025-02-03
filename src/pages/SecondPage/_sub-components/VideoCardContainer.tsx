@@ -2,14 +2,48 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
 const VideoCardContainer = () => {
+  const videoData = [
+    {
+      videoUrl: "/UniversalResizer.mp4",
+      title: "First Video",
+      description: "This is the first video description.",
+      icon: <span>🎬</span>,
+
+      buttonText: "amrr",
+    },
+    {
+      videoUrl: "/video2.mp4",
+      title: "Second Video",
+      description: "This is the second video description.",
+      icon: <span>📽️</span>,
+      buttonText: "amrr",
+    },
+    {
+      videoUrl: "/video3.mp4",
+      title: "Third Video",
+      description: "This is the third video description.",
+      icon: <span>🎥</span>,
+      buttonText: "amrr",
+    },
+  ];
+
   return (
     <div className="bg-black">
       <h3 className="text-white text-center font-bold text-3xl">Tools</h3>
       <ToggleMenu />
       <div className="grid gap-1 md:gap-2 w-full justify-center grid-cols-2 lg:grid-cols-3">
-        {[{}, {}, {}].map((item, i) => {
+        {videoData.map((item, i) => {
           console.log(item);
-          return <VideoCard key={i} />;
+          return (
+            <VideoCard
+              key={i}
+              videoUrl={item.videoUrl}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+              buttonText={item.buttonText}
+            />
+          );
         })}
       </div>
     </div>
@@ -18,7 +52,19 @@ const VideoCardContainer = () => {
 
 export default VideoCardContainer;
 
-const VideoCard = () => {
+const VideoCard = ({
+  description,
+  icon,
+  title,
+  videoUrl,
+  buttonText,
+}: {
+  videoUrl: string;
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  buttonText: string;
+}) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const [hoverState, setHoverState] = useState(false);
@@ -56,7 +102,7 @@ const VideoCard = () => {
           <video
             ref={videoRef}
             className="absolute top-0 left-0 w-full h-full object-cover"
-            src="/UniversalResizer.mp4"
+            src={videoUrl}
             muted
             playsInline
             loop
@@ -73,7 +119,7 @@ const VideoCard = () => {
             }}
           >
             <button className="transition-all bg-blue-600 select-none h-10 flex items-center justify-center text-sm font-medium gap-1.5 disabled:opacity-35 disabled:pointer-events-none bg-primary-500 text-gray-100 hover:bg-primary-400 py-3 px-5 rounded-full w-full drop-shadow-[0_4px_8px_rgba(0,0,0,0.25)]">
-              kkk
+              {buttonText}
             </button>
           </div>
         </div>
@@ -81,12 +127,9 @@ const VideoCard = () => {
 
       <div className="p-6 flex flex-col gap-2 text-gray-700 dark:text-gray-200 h-[123px]">
         <div className="flex">
-          <span>icon</span> <h1>Lorem ipsum dolor sit.</h1>
+          {icon} <h1 className="ml-2">{title}</h1>
         </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
-          fugit!
-        </p>
+        <p>{description}</p>
       </div>
     </a>
   );

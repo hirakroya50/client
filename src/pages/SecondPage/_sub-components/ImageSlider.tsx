@@ -154,7 +154,7 @@ const ToggleMenu = ({
           key={option}
           className={`px-4 py-2 rounded-full border ${
             selected === option
-              ? "bg-white text-black"
+              ? "bg-white text-black hover:bg-gray-300"
               : "border-white text-white"
           }`}
           onClick={() => setSelected(option)}

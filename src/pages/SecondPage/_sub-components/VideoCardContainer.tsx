@@ -217,7 +217,7 @@ const ToggleMenu = () => {
           key={option}
           className={`px-4 py-2 rounded-full border ${
             selected === option
-              ? "bg-white text-black"
+              ? "bg-white text-black hover:bg-gray-300"
               : option === "New"
               ? "border-blue-500 text-blue-500"
               : "border-white text-white"

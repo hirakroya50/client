@@ -98,7 +98,8 @@ const QuestionAnswer = () => {
       <div className="absolute bottom-0 left-0 right-0 flex justify-center mt-4">
         <button
           onClick={toggleVisibility}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          className="px-4 rounded-xl py-2 bg-[#24355c] text-white hover:bg-[#202e4e]"
+          // class="transition-all select-none h-10 flex items-center justify-center rounded-xl text-sm font-medium gap-1.5 disabled:opacity-35 disabled:pointer-events-none bg-primary-200 text-primary-700 hover:bg-primary-300 dark:bg-primary-700 dark:text-primary-200 dark:hover:bg-primary-600 py-3 pr-5 pl-[18px]"
         >
           {visibleCount === 5 ? "See More" : "See Less"}
         </button>

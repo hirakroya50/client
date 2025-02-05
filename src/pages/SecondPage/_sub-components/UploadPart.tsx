@@ -4,7 +4,7 @@ import { StepForward } from "lucide-react";
 
 const UploadPart = () => {
   return (
-    <div className=" text-center flex justify-center flex-col gap-2 mt-20">
+    <div className=" text-center flex justify-center flex-col gap-2 my-12">
       <span>
         <StepForward className="m-auto mt-6 h-10 w-10" />
       </span>{" "}
@@ -47,7 +47,7 @@ function FileUpload() {
   };
 
   return (
-    <div className="bg-[#1c60f6] p-2 rounded-lg h-[10rem] w-[95vw]">
+    <div className="bg-[#1c60f6] p-3 rounded-lg h-[14rem] w-[95vw]">
       <div
         className="flex justify-center items-center rounded-lg border-dashed border-2 hover:bg-blue-400 border-white w-full  h-full"
         onDrop={handleDrop}

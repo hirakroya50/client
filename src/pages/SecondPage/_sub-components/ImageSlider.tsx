@@ -51,13 +51,13 @@ const ImageSlider = () => {
   }, [selected]);
 
   return (
-    <div className="bg-[#171717] border border-red-700 mt-10 text-white">
+    <div className="bg-[#171717] mt-10 text-white">
       <h3 className="text-white text-center font-bold text-3xl">
         TRY AN EXAMPLE
       </h3>
       <ToggleMenu selected={selected} setSelected={setSelected} />
       <div className=" w-full force-full-screen-w m-auto second-page-dot-background flex flex-col items-center justify-center gap-8 py-8 md:py-16">
-        <div className="image border border-red-500 h-full w-full flex justify-center overflow-hidden flex-1">
+        <div className="image  h-full w-full flex justify-center overflow-hidden flex-1">
           <div
             className="relative overflow-hidden max-h-full h-auto w-auto"
             style={{
@@ -95,7 +95,7 @@ const ImageSlider = () => {
                 >
                   <img
                     src={data.item2}
-                    className="max-w-full border border-red-500  pointer-events-none m-auto bg-gray-200 dark:bg-gray-800 h-full"
+                    className="max-w-full   pointer-events-none m-auto bg-gray-200 dark:bg-gray-800 h-full"
                     alt=""
                   />
                 </div>

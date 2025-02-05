@@ -5,13 +5,17 @@ import VideoCardContainer from "./_sub-components/VideoCardContainer";
 
 const SecondPage = () => {
   return (
-    <PageContainer className="bg-[#171717]">
+    <div className="bg-[#171717]">
       <HeaderCompponent />
-      <ImageSlider />
-      <VideoCardContainer />
+      <div className="h-[30vh] bg-"></div>
 
-      <QuestionAnswer />
-    </PageContainer>
+      <PageContainer className="bg-[#171717]">
+        <ImageSlider />
+        <VideoCardContainer />
+
+        <QuestionAnswer />
+      </PageContainer>
+    </div>
   );
 };
 

@@ -41,12 +41,13 @@ const ImageSlider = () => {
   const [data, setData] = useState(imageArray[0]);
 
   useEffect(() => {
-    if (selected === "Portrait") setData(imageArray[0]);
-    if (selected === "Elevate") setData(imageArray[1]);
+    // if (selected === "Portrait")
+    setData(imageArray[0]);
+    // if (selected === "Elevate") setData(imageArray[1]);
 
-    if (selected === "Remix") setData(imageArray[2]);
+    // if (selected === "Remix") setData(imageArray[2]);
 
-    if (selected === "Drawing") setData(imageArray[3]);
+    // if (selected === "Drawing") setData(imageArray[3]);
   }, [selected]);
 
   return (

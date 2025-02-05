@@ -2,7 +2,7 @@ import { SquareMIcon } from "lucide-react";
 
 export const HeaderComponent = () => {
   return (
-    <div className=" sticky top-0 z-20 flex items-center justify-between w-full  text-white bg-[#171717] py-4 border-b border-[#424242]">
+    <div className="  flex items-center justify-between w-full  text-white bg-[#171717] ">
       <p className="font-bold flex gap-2 items-center">
         <span>
           <SquareMIcon className="h-10 w-10" />

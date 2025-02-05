@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 const QuestionAnswer = () => {
   const data = [
     {
@@ -71,7 +72,8 @@ const QuestionAnswer = () => {
   };
 
   return (
-    <div className="w-full relative bg-[#171717] text-white">
+    <div className="w-full relative bg-[#171717] text-white my-20 ">
+      <h3 className="text-[3rem] text-center">FREQUENTLY ASKED QUESTIONS</h3>
       <Accordion type="single" collapsible className="w-full">
         {data.slice(0, visibleCount).map((item, index) => {
           const isFaded =
@@ -80,7 +82,10 @@ const QuestionAnswer = () => {
             index < visibleCount;
           return (
             <AccordionItem
-              className={isFaded ? "opacity-50" : ""}
+              className={cn(
+                isFaded ? "opacity-50" : "",
+                "py-2 hover:bg-[#2d2d2d] px-4 group-hover:bg-[#2d2d2d] border-[#2d2d2d]"
+              )}
               key={item.value}
               value={item.value}
             >

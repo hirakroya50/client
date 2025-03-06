@@ -22,7 +22,7 @@ const NavBar = () => {
         </a>
 
         <DropDownMenu />
-        <div className="relative">
+        <div className="relative hidden md:flex">
           <CustomButton variant={"VarA"} className="mr-5">
             Login
           </CustomButton>

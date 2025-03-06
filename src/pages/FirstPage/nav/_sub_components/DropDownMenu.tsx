@@ -50,7 +50,7 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 export function DropDownMenu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>

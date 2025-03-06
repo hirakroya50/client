@@ -4,7 +4,7 @@ export const PartC = () => {
       <h3 className="text-4xl font-bold relative bottom-20">
         Benefits of Referral and Affiliate Programs
       </h3>
-      <div className="flex gap-5 ">
+      <div className="flex gap-5 wrap">
         {[
           { percentage: "2-3x", text: "Return on Investments (ROI)" },
 
@@ -30,7 +30,7 @@ export const PartC = () => {
           );
         })}
       </div>
-      <div className="w-[1100px] relative top-20 h-[600px]">
+      <div className="w-[80%] relative top-20 h-[13rem] md:h-[20rem] lg:h-[30rem]">
         <iframe
           width="560"
           height="315"

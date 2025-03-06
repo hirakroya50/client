@@ -2,7 +2,7 @@ import CustomButton from "@/pages/_components/buttons/CustomButton";
 
 export const PartA = () => {
   return (
-    <div className="flex gap-10 my-8">
+    <div className="md:flex-row flex gap-10 my-8  flex-col">
       <section className="flex flex-col justify-center gap-5">
         <h1 className="text-3xl font-bold text-[#292929]">
           Referral & Affiliate Marketing Software for Business Growth.

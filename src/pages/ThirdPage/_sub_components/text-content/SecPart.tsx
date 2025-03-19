@@ -1,7 +1,7 @@
 const SecPart = () => {
   return (
     <div>
-      <div className="rounded-[15px] overflow-clip">
+      <div className="rounded-[0.9375rem] overflow-clip">
         <img
           src="/674d5ea65de328cddeb90556_654e1488e0889594ede03c17_w3.webp"
           alt=""
@@ -9,7 +9,7 @@ const SecPart = () => {
         />
       </div>
 
-      <h3 className="text-[40px] mt-10 mb-6">
+      <h3 className="text-[2.5rem] mt-10 mb-6">
         How to Develop an AI powered SaaS Product in 6 Steps
       </h3>
 
@@ -28,7 +28,7 @@ const SecPart = () => {
         technology effectively, you must be aware of the steps to follow.
       </p>
 
-      <h3 className="text-[40px] mt-10 mb-6">
+      <h3 className="text-[2.5rem] mt-10 mb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptatum!
       </h3>
 
@@ -47,7 +47,7 @@ const SecPart = () => {
         technology effectively, you must be aware of the steps to follow.
       </p>
 
-      <h3 className="text-[40px] mt-10 mb-6">
+      <h3 className="text-[2.5rem] mt-10 mb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptatum!
       </h3>
 
@@ -65,7 +65,7 @@ const SecPart = () => {
         closer look at the need for AI implementation. To implement the
         technology effectively, you must be aware of the steps to follow.
       </p>
-      <div className="rounded-[15px] overflow-clip">
+      <div className="rounded-[0.9375rem] overflow-clip">
         <img
           src="/674d5ea65de328cddeb90553_654e146a4026bbced820c98c_w4.webp"
           alt=""

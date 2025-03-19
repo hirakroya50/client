@@ -44,7 +44,7 @@ import { Button } from "@/components/ui/button";
 export function SelectDemo() {
   return (
     <Select>
-      <SelectTrigger className="w-[120px] rounded-xl text-sm font-medium bg-gray-700 text-gray-200 hover:bg-gray-600 border-none">
+      <SelectTrigger className="w-[7.5rem] rounded-xl text-sm font-medium bg-gray-700 text-gray-200 hover:bg-gray-600 border-none">
         <SelectValue placeholder="Select a op" />
       </SelectTrigger>
       <SelectContent>

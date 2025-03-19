@@ -29,7 +29,7 @@ const LastArticle = () => {
         ].map((item, i) => {
           return (
             <a href="##" key={i} className="flex flex-col gap-3 grow w-[33%]">
-              <div className="rounded-[20px] overflow-clip mb-4">
+              <div className="rounded-[1.25rem] overflow-clip mb-4">
                 <img src={item.img} alt="" />
               </div>
               <h2 className="text-xl">{item.heading}</h2>

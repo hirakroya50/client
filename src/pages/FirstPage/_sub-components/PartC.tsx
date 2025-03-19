@@ -39,7 +39,7 @@ export const PartC = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="rounded-[30px] w-full h-full"
+          className="rounded-[1.875rem] w-full h-full"
         ></iframe>
       </div>
     </div>

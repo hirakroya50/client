@@ -22,9 +22,9 @@ const HeaderC = () => {
 
         <a
           href="#"
-          className="block h-fit bg-[linear-gradient(45deg,#4f61ff,#f450f9)] rounded-[8px]"
+          className="block h-fit bg-[linear-gradient(45deg,#4f61ff,#f450f9)] rounded-[0.5rem]"
         >
-          <div className="flex justify-center items-center  bg-white m-0.5 rounded-[6px]">
+          <div className="flex justify-center items-center  bg-white m-0.5 rounded-[0.375rem]">
             <h1 className=" bg-[linear-gradient(45deg,#4f61ff,#f450f9)] text-[1rem] py-2 px-3 bg-clip-text text-transparent">
               Get Started
             </h1>

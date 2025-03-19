@@ -2,7 +2,7 @@ export const HeroComponent = () => {
   return (
     <div className="flex  gap-10 justify-between ">
       <div className="flex gap-10 max-w-[30rem]  flex-col items-center justify-center text-[#37384A]">
-        <h3 className="text-4xl font-bold leading-[50px]">
+        <h3 className="text-4xl font-bold leading-[3.125rem]">
           How to Develop an AI-powered SaaS Product in 6 Steps
         </h3>
         <p className="text-[1rem] leading-6 font-medium">
@@ -13,7 +13,7 @@ export const HeroComponent = () => {
         </p>
       </div>
 
-      <div className=" rounded-[27px] shadow-lg overflow-clip max-w-[40rem]">
+      <div className=" rounded-[1.6875rem] shadow-lg overflow-clip max-w-[40rem]">
         <img
           src="/654e14015a507bad6c8c07c8_How_to_Develop.avif"
           className=" w-fit"

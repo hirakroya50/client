@@ -151,10 +151,10 @@ const VideoCard = ({
         setHoverState(false);
       }}
       href="###"
-      className="h-[330px] bg-[#2d2d2d] dark:bg-gray-800 text-white rounded-2xl flex flex-col justify-end relative"
+      className="h-[20.625rem] bg-[#2d2d2d] dark:bg-gray-800 text-white rounded-2xl flex flex-col justify-end relative"
     >
       <div
-        className="absolute inset-0 rounded-2xl  w-full h-[208px] overflow-hidden"
+        className="absolute inset-0 rounded-2xl  w-full h-[13rem] overflow-hidden"
         style={{
           height: `${hoverState ? "100%" : "208px"}`,
           transition: "height 0.3s ease",
@@ -188,7 +188,7 @@ const VideoCard = ({
         </div>
       </div>
 
-      <div className="p-6 flex flex-col gap-2  dark:text-gray-200 h-[123px]">
+      <div className="p-6 flex flex-col gap-2  dark:text-gray-200 h-[7.6875rem]">
         <div className="flex items-center gap-2">
           {icon} <h1 className="ml-2">{title}</h1>
         </div>

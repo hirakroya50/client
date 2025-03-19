@@ -8,7 +8,7 @@ const ContactUs = () => {
       </p>
       <a
         href="mailto:example@example.com"
-        className="p-3 border-[#f26627] border rounded-[50px]"
+        className="p-3 border-[#f26627] border rounded-[3.125rem]"
       >
         Support@help.goooo.in
       </a>

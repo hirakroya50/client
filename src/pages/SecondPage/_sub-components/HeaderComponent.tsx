@@ -1,5 +1,3 @@
-import { SquareMIcon } from "lucide-react";
-
 export const HeaderComponent = () => {
   return (
     <div className="  flex items-center justify-between w-full  text-white bg-[#171717] ">
@@ -9,7 +7,7 @@ export const HeaderComponent = () => {
         </span>
         <span> MopyBoard By Jser</span>
       </p>
-      <div className="flex gap-3">
+      <div className=" gap-3 hidden md:flex ">
         <SelectDemo />
 
         <Button className="hover:bg-gray-600 bg-transparent rounded-xl">
@@ -26,6 +24,7 @@ export const HeaderComponent = () => {
           Sign-in / Sign-up
         </Button>
       </div>
+      <SideNavBarForMobile />
     </div>
   );
 };
@@ -40,6 +39,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import SideNavBarForMobile from "./SideNavBarForMobile";
+import { SquareMIcon } from "lucide-react";
 
 export function SelectDemo() {
   return (

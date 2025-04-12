@@ -1,10 +1,10 @@
 export const PartC = () => {
   return (
     <div className="  flex flex-col items-center">
-      <h3 className="text-4xl font-bold relative bottom-20">
+      <h3 className="text-4xl font-bold relative bottom-20 px-3">
         Benefits of Referral and Affiliate Programs
       </h3>
-      <div className="flex gap-5 wrap">
+      <div className="flex md:flex-row flex-col gap-5 wrap">
         {[
           { percentage: "2-3x", text: "Return on Investments (ROI)" },
 
@@ -19,7 +19,7 @@ export const PartC = () => {
             <div
               key={i}
               className={` border-[#f26627] flex flex-col p-4 text-center max-w-[14rem] ${
-                i === 3 ? "" : "border-r"
+                i === 3 ? "" : "md:border-r  border-r-0 border-b md:border-b-0"
               }`}
             >
               <p className="text-[#f26627] text-3xl font-medium">
@@ -30,7 +30,7 @@ export const PartC = () => {
           );
         })}
       </div>
-      <div className="w-[80%] relative top-20 h-[13rem] md:h-[20rem] lg:h-[30rem]">
+      <div className="w-[80%] relative top-20 h-[13rem] md:h-[20rem] lg:h-[30rem] max-w-[50rem]">
         <iframe
           width="560"
           height="315"

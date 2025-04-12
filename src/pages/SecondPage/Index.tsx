@@ -10,8 +10,9 @@ const SecondPage = () => {
       <PageContainer className="bg-[#171717] border-b sticky top-0 z-50 border-[#424242]">
         <HeaderComponent />
       </PageContainer>
-
-      <UploadPart />
+      <PageContainer className="max-w-5xl mx-auto">
+        <UploadPart />
+      </PageContainer>
 
       <PageContainer className="bg-[#171717]">
         <ImageSlider />

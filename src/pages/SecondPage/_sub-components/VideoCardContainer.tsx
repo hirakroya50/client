@@ -1,97 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
-import {
-  Wrench,
-  Sparkles,
-  Bolt,
-  Image,
-  Eraser,
-  Expand,
-  Monitor,
-  Paintbrush,
-  RefreshCcw,
-  BringToFront,
-} from "lucide-react";
+
+import { options, videoData } from "@/constants/secound";
 const VideoCardContainer = () => {
-  const videoData = [
-    {
-      videoUrl: "/UniversalResizer.mp4",
-      title: "Universal Resizer",
-      description: "Resize your media effortlessly with this powerful tool.",
-      icon: <Wrench size={20} />,
-      buttonText: "Try Now",
-    },
-    {
-      videoUrl: "/GenerativeFill.webm",
-      title: "AI Generative Fill",
-      description: "Automatically fill and enhance images with AI.",
-      icon: <Sparkles size={20} />,
-      buttonText: "Explore",
-    },
-    {
-      videoUrl: "/SD-Turbo.webm",
-      title: "Super Fast SD Processing",
-      description: "Experience high-speed stable diffusion with SD Turbo.",
-      icon: <Bolt size={20} />,
-      buttonText: "Boost",
-    },
-    {
-      videoUrl: "/JasperAI-1.1.webm",
-      title: "Jasper AI 1.1",
-      description: "Enhanced AI-powered content creation at your fingertips.",
-      icon: <Bolt size={20} />,
-      buttonText: "Generate",
-    },
-    {
-      videoUrl: "/ReplaceBackground.webm",
-      title: "Background Replacer",
-      description: "Swap backgrounds effortlessly using AI technology.",
-      icon: <Image size={20} />,
-      buttonText: "Replace",
-    },
-    {
-      videoUrl: "/RemoveBG.webm",
-      title: "Background Remover",
-      description: "Instantly remove image backgrounds with precision.",
-      icon: <Eraser size={20} />,
-      buttonText: "Remove",
-    },
-    {
-      videoUrl: "/Cleanup.webm",
-      title: "AI Cleanup Tool",
-      description: "Erase unwanted objects from images with AI magic.",
-      icon: <BringToFront size={20} />,
-      buttonText: "Clean",
-    },
-    {
-      videoUrl: "/Uncrop.webm",
-      title: "AI Uncrop",
-      description: "Extend images beyond their original boundaries seamlessly.",
-      icon: <Expand size={20} />,
-      buttonText: "Expand",
-    },
-    {
-      videoUrl: "/Enhance.webm",
-      title: "Image Enhancer",
-      description: "Sharpen and improve image quality instantly.",
-      icon: <Monitor size={20} />,
-      buttonText: "Enhance",
-    },
-    {
-      videoUrl: "/StableDoodle.webm",
-      title: "Stable Doodle",
-      description: "Transform doodles into high-quality digital art.",
-      icon: <Paintbrush size={20} />,
-      buttonText: "Draw",
-    },
-    {
-      videoUrl: "/ImageVariation.webm",
-      title: "Image Variation Generator",
-      description: "Create multiple variations of an image with AI.",
-      icon: <RefreshCcw size={20} />,
-      buttonText: "Generate",
-    },
-  ];
   return (
     <div className="bg-[#171717]">
       <h3 className="text-white text-center font-bold text-3xl">Tools</h3>
@@ -199,19 +110,10 @@ const VideoCard = ({
 };
 
 const ToggleMenu = () => {
-  const options = [
-    "Highlight",
-    "New",
-    "Image edition",
-    "Generative tools",
-    "Real-estate",
-    "Portrait edition",
-    "All",
-  ];
   const [selected, setSelected] = useState("Highlight");
 
   return (
-    <div className="flex gap-2 p-4 rounded-lg">
+    <div className="flex gap-2 p-4 rounded-lg  w-[98%] overflow-auto">
       {options.map((option) => (
         <Button
           key={option}

@@ -1,6 +1,6 @@
 export const HeroComponent = () => {
   return (
-    <div className="flex  gap-10 justify-between ">
+    <div className="flex  gap-10 justify-between flex-col-reverse md:flex-row">
       <div className="flex gap-10 max-w-[30rem]  flex-col items-center justify-center text-[#37384A]">
         <h3 className="text-4xl font-bold leading-[3.125rem]">
           How to Develop an AI-powered SaaS Product in 6 Steps

@@ -4,7 +4,7 @@ export const StickyFrom = () => {
       onSubmit={(e) => {
         e.preventDefault();
       }}
-      className="bg-[linear-gradient(#272734,#000)] p-2 w-[35rem] gap-4 mx-auto rounded-lg flex"
+      className="bg-[linear-gradient(#272734,#000)] p-2 w-[90%] md:w-[35rem] gap-4 mx-auto rounded-lg flex"
     >
       <input
         type="text"

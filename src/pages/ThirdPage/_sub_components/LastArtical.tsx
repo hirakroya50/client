@@ -5,7 +5,7 @@ const LastArticle = () => {
         Latest Articles
       </h2>
 
-      <div className="flex justify-between gap-20">
+      <div className="flex flex-col md:flex-row gap-4 items-center ">
         {[
           {
             heading:
@@ -28,7 +28,11 @@ const LastArticle = () => {
           },
         ].map((item, i) => {
           return (
-            <a href="##" key={i} className="flex flex-col gap-3 grow w-[33%]">
+            <a
+              href="##"
+              key={i}
+              className="flex flex-col gap-3 grow md:w-[33%] w-[85%]"
+            >
               <div className="rounded-[1.25rem] overflow-clip mb-4">
                 <img src={item.img} alt="" />
               </div>

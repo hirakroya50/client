@@ -68,12 +68,12 @@ const SectionWithStickyPageNavigation = () => {
   }, []);
 
   return (
-    <section className=" flex gap-10  my-3 ">
+    <section className=" flex gap-0  md:gap-10  my-3 ">
       {/* Sticky navigation */}
       <div className="">
-        <div className="  w-64 sticky top-0 p-3">
+        <div className=" w-30 md:w-64 sticky top-0 p-0 md:p-3">
           <h4 className="text-2xl pb-8 font-medium mt-20">Table of Contents</h4>
-          <ul className="flex flex-col pl-2">
+          <ul className="flex flex-col pl-0 md:pl-2">
             {navigationItems.map((item) => (
               <li key={item.id}>
                 <a
@@ -93,12 +93,12 @@ const SectionWithStickyPageNavigation = () => {
       </div>
 
       {/* Sections */}
-      <div className="flex-1">
+      <div className="grow">
         {navigationItemsData.map((item) => (
           <div
             key={item.id}
             id={item.id}
-            className={`   flex items-center justify-center mb-10 p-4`}
+            className={`   flex items-center justify-center mb-10 p-2 mdp-4`}
           >
             {item.id === "first" && <FirstPart />}
             {item.id === "2nd" && <SecPart />}

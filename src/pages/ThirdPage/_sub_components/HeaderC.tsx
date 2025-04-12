@@ -11,11 +11,11 @@ const HeaderC = () => {
           alt=""
         />
       </div>
-      <div>
+      <div className="hidden md:blaock">
         <NavigationMenuForThirdPage />
       </div>
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-2 md:gap-8">
         <a href="#" className="">
           Login
         </a>

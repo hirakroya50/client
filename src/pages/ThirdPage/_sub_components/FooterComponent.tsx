@@ -43,7 +43,7 @@ const footerData = [
 ];
 const FooterComponent = () => {
   return (
-    <footer className=" px-60   border-blue-500 my-5 ">
+    <footer className="  border-blue-500 my-5 ">
       <div className="mb-10">
         <img src="/65d3d4e5d4e26e0063259c20_Group (7).svg" alt="" />
       </div>
@@ -53,12 +53,13 @@ const FooterComponent = () => {
             <h3 className="font-bold text-lg mb-7">{section.title}</h3>
             <ul>
               {section.links.map((link, linkIndex) => (
-                <li
+                <a
                   key={linkIndex}
-                  className="text-gray-600 hover:underline mb-4 cursor-pointer"
+                  href="#"
+                  className="text-gray-600 block hover:underline mb-4 cursor-pointer"
                 >
                   {link}
-                </li>
+                </a>
               ))}
             </ul>
           </div>
@@ -67,13 +68,13 @@ const FooterComponent = () => {
       <div className="flex justify-between mt-10">
         <p>© 2025 Decktopus, Inc.</p>
 
-        <div className="flex gap-3 items-center">
-          <FacebookIcon />
-          <InstagramIcon />
-          <TwitchIcon />
-          <LinkedinIcon />
-          <XIcon />
-          <YoutubeIcon />
+        <div className="flex gap-3 items-center justify-center">
+          <FacebookIcon className="cursor-pointer" />
+          <InstagramIcon className="cursor-pointer" />
+          <TwitchIcon className="cursor-pointer" />
+          <LinkedinIcon className="cursor-pointer" />
+          <XIcon className="cursor-pointer" />
+          <YoutubeIcon className="cursor-pointer" />
         </div>
       </div>
     </footer>

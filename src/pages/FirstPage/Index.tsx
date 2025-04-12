@@ -22,7 +22,7 @@ const FirstPage = () => {
         <div className="customBackground">
           <PartC />
         </div>
-        {/* <PageContainer className=" bg-[#001246] py-16">
+        <PageContainer className=" bg-[#001246] py-16">
           <PartB />
         </PageContainer>
 
@@ -46,7 +46,7 @@ const FirstPage = () => {
         </PageContainer>
         <PageContainer>
           <FooterPart />
-        </PageContainer> */}
+        </PageContainer>
       </div>
     </>
   );

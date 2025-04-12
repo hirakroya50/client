@@ -47,9 +47,9 @@ const FooterPart = () => {
   ];
 
   return (
-    <footer className="border-[#f0f1f2] border-t flex pt-10">
-      <div className="w-96">
-        <div className="flex items-center">
+    <footer className="border-[#f0f1f2] border-t flex flex-col md:flex-row pt-10">
+      <div className=" w-full md:w-96">
+        <div className="flex items-center  justify-center md:justify-start">
           <div className="h-20 ">
             <img src="/clientapplogo.png" alt="" className="h-full w-full" />
           </div>

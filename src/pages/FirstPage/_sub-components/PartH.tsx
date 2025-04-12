@@ -5,7 +5,7 @@ const PartH = () => {
         Learn how to get the most out of referral and affiliate marketing
       </h3>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6 flex-col md:flex-row">
         {[
           {
             img: "/home-blog-1.webp",
@@ -25,8 +25,8 @@ const PartH = () => {
             <a
               href="###"
               key={i}
-              className={` border-gray-400 w-[30%] flex gap-6 flex-col pr-5 ${
-                i === 2 ? "" : "border-r"
+              className={` border-gray-400 w-full md:w-[30%] flex gap-6 flex-col pr-0 md:pr-5 ${
+                i === 2 ? "" : "md:border-r border-r-0 md:border-b-0 border-b"
               }`}
             >
               <div className="h-56">

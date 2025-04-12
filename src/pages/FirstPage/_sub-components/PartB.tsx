@@ -12,8 +12,8 @@ export const PartB = () => {
         </p>
       </div>
 
-      <div className="flex gap-3">
-        <div className="flex flex-col items-center gap-3 py-20 max-w-[25rem] bg-[#f9f9f9] rounded-[0.5rem] text-black p-12">
+      <div className="flex gap-3 flex-col md:flex-row">
+        <div className="flex flex-col  items-center gap-3 py-20 max-w-[100%] md:max-w-[25rem] bg-[#f9f9f9] rounded-[0.5rem] text-black p-12">
           <PersonStanding className="text-[#f26627] h-10 w-10" />
           <h3 className="text-lg font-bold">
             Launch Profitable Partner Programs
@@ -23,7 +23,7 @@ export const PartB = () => {
             portal, auto payouts and seamless affiliate program integration.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-3 py-20 max-w-[25rem] bg-[#f26627] rounded-[0.5rem] text-black p-12">
+        <div className="flex flex-col items-center gap-3 py-20 max-w-[100%] md:max-w-[25rem] bg-[#f26627] rounded-[0.5rem] text-black p-12">
           <SoupIcon className="text-[#ffff] h-10 w-10" />
 
           <h3 className="text-[#ffff] text-lg font-bold">
@@ -35,7 +35,7 @@ export const PartB = () => {
             maximum program engagement.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-3 py-20 max-w-[25rem] bg-[#f9f9f9] rounded-[0.5rem] text-black p-12">
+        <div className="flex flex-col items-center gap-3 py-20 max-w-[100%] md:max-w-[25rem] bg-[#f9f9f9] rounded-[0.5rem] text-black p-12">
           <PersonStanding className="text-[#f26627] h-10 w-10" />
           <h3 className="text-lg font-bold">
             Reduce Customer Acquisition Cost With Affiliate Marketing

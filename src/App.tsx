@@ -10,11 +10,11 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <div>
-        <div className="flex gap-4 ">
+        {/* <div className="flex gap-4 ">
           <a href="/firstPage">firstPage</a>
           <a href="/secondPage">secondPage</a>
           <a href="/thirdPage">thirdPage</a>
-        </div>
+        </div> */}
         <Routes>
           <Route
             path="/"

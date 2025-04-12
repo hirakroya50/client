@@ -100,3 +100,31 @@ export const options = [
   "Portrait edition",
   "All",
 ];
+
+export const imageArray = [
+  {
+    item1: "Portrait-Relight.webp",
+    item2: "Portrait.webp",
+    text: "Elevate the quality of your selfies or portraits effortlessly. Transform ordinary photos into stunning, professionally-lit images.",
+  },
+  {
+    item1: "outdoor_magic.webp",
+    item2: "outdoor_magic_edited.webp",
+    text: "Elevate the quality of your selfies or portraits effortlessly. Transform ordinary photos into stunning, professionally-lit images.",
+  },
+  {
+    item1: "Elevate-Relight.webp",
+    item2: "Elevate.webp",
+    text: "Add a touch of brilliance to your photos during post-production.",
+  },
+  {
+    item1: "Remix_Relight.webp",
+    item2: "Remix (1).webp",
+    text: "Whether you're creating new masterpieces or revisiting classics, easily experiment with various lighting setups quickly.",
+  },
+  {
+    item1: "Drawing_Relight.webp",
+    item2: "Drawing.webp",
+    text: "Take your drawings to the next level with customized light setups. Give to your artwork a captivating touch.",
+  },
+];

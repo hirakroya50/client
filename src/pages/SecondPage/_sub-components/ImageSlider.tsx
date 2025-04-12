@@ -1,34 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { imageArray } from "@/constants/secound";
 import React, { useEffect, useState } from "react";
-const imageArray = [
-  {
-    item1: "Portrait-Relight.webp",
-    item2: "Portrait.webp",
-    text: "Elevate the quality of your selfies or portraits effortlessly. Transform ordinary photos into stunning, professionally-lit images.",
-  },
-  {
-    item1: "outdoor_magic.webp",
-    item2: "outdoor_magic_edited.webp",
-    text: "Elevate the quality of your selfies or portraits effortlessly. Transform ordinary photos into stunning, professionally-lit images.",
-  },
-  {
-    item1: "Elevate-Relight.webp",
-    item2: "Elevate.webp",
-    text: "Add a touch of brilliance to your photos during post-production.",
-  },
-  {
-    item1: "Remix_Relight.webp",
-    item2: "Remix (1).webp",
-    text: "Whether you're creating new masterpieces or revisiting classics, easily experiment with various lighting setups quickly.",
-  },
-  {
-    item1: "Drawing_Relight.webp",
-    item2: "Drawing.webp",
-    text: "Take your drawings to the next level with customized light setups. Give to your artwork a captivating touch.",
-  },
-];
+
 const ImageSlider = () => {
-  const [value, setValue] = useState(90); // Initialize state with a default value
+  const [value, setValue] = useState(70); // Initialize state with a default value
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(parseFloat(event.target.value)); // Update the state with the current input value
@@ -124,12 +99,6 @@ const ImageSlider = () => {
       </div>
 
       <p className="text-center w-[50%] text-[#BABABA] mx-auto">{data.text}</p>
-
-      <div className="flex justify-center">
-        <Button className="rounded-xl bg-[#1C60F6] font-bold">
-          Try with this Example
-        </Button>
-      </div>
     </div>
   );
 };

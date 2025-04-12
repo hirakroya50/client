@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { options, videoData } from "@/constants/secound";
 const VideoCardContainer = () => {
   return (
-    <div className="bg-[#171717]">
+    <div className="bg-[#171717]  mt-10">
       <h3 className="text-white text-center font-bold text-3xl">Tools</h3>
       <ToggleMenu />
-      <div className="grid gap-1 md:gap-2 w-full justify-center grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-2 md:gap-3 w-full justify-center grid-cols-2 lg:grid-cols-3 mt-1">
         {videoData.map((item, i) => {
           return (
             <VideoCard
@@ -99,7 +99,7 @@ const VideoCard = ({
         </div>
       </div>
 
-      <div className="p-6 flex flex-col gap-2  dark:text-gray-200 h-[7.6875rem]">
+      <div className="p-4 flex flex-col gap-2  dark:text-gray-200 h-[7.6875rem]">
         <div className="flex items-center gap-2">
           {icon} <h1 className="ml-2">{title}</h1>
         </div>

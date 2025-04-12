@@ -29,10 +29,14 @@ const PartH = () => {
                 i === 2 ? "" : "md:border-r border-r-0 md:border-b-0 border-b"
               }`}
             >
-              <div className="h-56">
-                <img src={item.img} alt="" className="h-full" />
+              <div className="max-w-[80%] flex   mx-auto md:mx-0">
+                <div className="">
+                  <img src={item.img} alt="" className=" w-full" />
+                </div>
               </div>
-              <p className="font-bold">{item.text}</p>
+              <p className="font-normal md:font-bold w-[80%] md:w-full mx-auto">
+                {item.text}
+              </p>
             </a>
           );
         })}

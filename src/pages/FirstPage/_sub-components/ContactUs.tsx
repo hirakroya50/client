@@ -1,14 +1,14 @@
 const ContactUs = () => {
   return (
-    <div className="flex flex-col gap-8 items-center my-10">
+    <div className="flex flex-col gap-2 md:gap-8 items-center my-10">
       <h2 className="text-3xl font-semibold">Contact Us</h2>
-      <p className="text-xl">
+      <p className="text-lg md:text-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
         officiis!
       </p>
       <a
         href="mailto:example@example.com"
-        className="p-3 border-[#f26627] border rounded-[3.125rem]"
+        className="p-3 py-2 text-sm md:text-base border-[#f26627] border rounded-[3.125rem]"
       >
         Support@help.goooo.in
       </a>

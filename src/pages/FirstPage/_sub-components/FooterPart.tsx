@@ -56,7 +56,7 @@ const FooterPart = () => {
           <h4 className="text-2xl font-bold">Referral Roctet</h4>
         </div>
 
-        <p className="mb-10">
+        <p className="mb-10 text-center md:text-left">
           Referral & Affiliate Software for SaaS, Ecommerce & other businesses.
         </p>
 
@@ -73,15 +73,15 @@ const FooterPart = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-around grow">
+      <div className="flex justify-around grow mt-10 md:mt-0">
         {data.map((item, i) => {
           return (
             <div key={i}>
-              <h6 className="text-2xl font-bold">{item.title}</h6>
+              <h6 className=" text-lg md:text-2xl font-bold">{item.title}</h6>
               <ul className="pt-4">
                 {item.navs.map((nav, j) => {
                   return (
-                    <li key={j} className="mt-1.5">
+                    <li key={j} className="mt-1.5 text-xs md:text-sm">
                       <a href="###">{nav.url}</a>
                     </li>
                   );
